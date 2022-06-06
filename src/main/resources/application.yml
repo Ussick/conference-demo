@@ -10,15 +10,12 @@ spring:
           lob:
             non_contextual_creation: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/conference_app
-    username: postgres
-    password: kfylsi13
-#    url: ${DB_URL:''}
-#    username: ${USER_NAME:''}
-#    password: ${PASSWORD:''}
+    url: ${DB_URL}
+    username:
+    password:
     driverClassName: org.postgresql.Driver
 server:
-  port: 5000
+  port: 8080
 
 app:
   version: 1.0.0
